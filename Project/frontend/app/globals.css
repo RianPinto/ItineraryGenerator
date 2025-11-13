@@ -1,0 +1,162 @@
+@import "tailwindcss";
+/* @import "tw-animate-css"; */
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #f7faf9; /* light gray */
+  --foreground: #0b1110; /* black */
+
+  /* Surfaces and components */
+  --card: #ffffff;
+  --card-foreground: #0b1110;
+  --popover: #ffffff;
+  --popover-foreground: #0b1110;
+
+  /* Primary brand */
+  --primary: #0f766e; /* deep cocoa */
+  --primary-foreground: #f7faf9; /* readable on primary */
+
+  /* Secondary surface tint (same palette) */
+  --secondary: #ffffff;
+  --secondary-foreground: #0b1110;
+
+  /* Muted + accent (reuse within the 4-color scheme) */
+  --muted: #f7faf9;
+  --muted-foreground: #0b1110;
+  --accent: #f59e0b; /* warm amber accent surface */
+  --accent-foreground: #0b1110;
+
+  /* System tokens constrained to 4 colors */
+  --destructive: #f59e0b;
+  --destructive-foreground: #0b1110;
+  --border: #f7faf9;
+  --input: #f7faf9;
+  --ring: #f59e0b;
+
+  /* Charts reused from palette to comply with color limit */
+  --chart-1: #0f766e;
+  --chart-2: #f59e0b;
+  --chart-3: #0b1110;
+  --chart-4: #ffffff;
+  --chart-5: #0f766e;
+
+  --radius: 0.625rem;
+
+  /* Sidebar */
+  --sidebar: #f7faf9;
+  --sidebar-foreground: #0b1110;
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: var(--accent);
+  --sidebar-accent-foreground: var(--accent-foreground);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
+}
+
+.dark {
+  --background: #0b1110;
+  --foreground: #f7faf9;
+
+  --card: #0b1110;
+  --card-foreground: #f7faf9;
+  --popover: #0b1110;
+  --popover-foreground: #f7faf9;
+
+  --primary: #0f766e; /* slightly lighter for dark backgrounds */
+  --primary-foreground: #f7faf9;
+
+  --secondary: #0b1110;
+  --secondary-foreground: #f7faf9;
+
+  --muted: #0b1110;
+  --muted-foreground: #f7faf9;
+
+  --accent: #f59e0b;
+  --accent-foreground: #0b1110;
+
+  --destructive: #f59e0b;
+  --destructive-foreground: #0b1110;
+
+  --border: #0f766e;
+  --input: #0f766e;
+  --ring: #f59e0b;
+
+  --chart-1: #0f766e;
+  --chart-2: #f59e0b;
+  --chart-3: #f7faf9;
+  --chart-4: #0b1110;
+  --chart-5: #0f766e;
+
+  --sidebar: #0b1110;
+  --sidebar-foreground: #f7faf9;
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: var(--accent);
+  --sidebar-accent-foreground: var(--accent-foreground);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .card-surface {
+    @apply bg-card border border-border rounded-lg;
+  }
+  .muted-surface {
+    @apply bg-muted text-muted-foreground;
+  }
+  .footer-bar {
+    @apply bg-primary text-primary-foreground;
+  }
+}

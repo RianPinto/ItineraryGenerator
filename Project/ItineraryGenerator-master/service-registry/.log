@@ -1,0 +1,135 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.dds:service-registry >----------------------
+[INFO] Building service-registry 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:2.6.15:run (default-cli) > test-compile @ service-registry >>>
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ service-registry ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 0 resource
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ service-registry ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- resources:3.2.0:testResources (default-testResources) @ service-registry ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] skip non existing resourceDirectory /home/rian-pinto/Desktop/microservices/service-registry/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ service-registry ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] <<< spring-boot:2.6.15:run (default-cli) < test-compile @ service-registry <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:2.6.15:run (default-cli) @ service-registry ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+[32m :: Spring Boot :: [39m             [2m (v2.6.15)[0;39m
+
+[2m2025-11-03 21:15:30.342[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.d.s.ServiceRegistryApplication        [0;39m [2m:[0;39m Starting ServiceRegistryApplication using Java 23.0.2 on rian-pinto-HP-250-G8-Notebook-PC with PID 137198 (/home/rian-pinto/Desktop/microservices/service-registry/target/classes started by rian-pinto in /home/rian-pinto/Desktop/microservices/service-registry)
+[2m2025-11-03 21:15:30.353[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.d.s.ServiceRegistryApplication        [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
+[2m2025-11-03 21:15:33.109[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.cloud.context.scope.GenericScope    [0;39m [2m:[0;39m BeanFactory id=db5a5336-7561-34c7-99e8-a51fe286f60a
+[2m2025-11-03 21:15:33.730[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.w.embedded.tomcat.TomcatWebServer [0;39m [2m:[0;39m Tomcat initialized with port(s): 8761 (http)
+[2m2025-11-03 21:15:33.757[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Starting service [Tomcat]
+[2m2025-11-03 21:15:33.758[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36morg.apache.catalina.core.StandardEngine [0;39m [2m:[0;39m Starting Servlet engine: [Apache Tomcat/9.0.75]
+[2m2025-11-03 21:15:34.107[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.a.c.c.C.[Tomcat].[localhost].[/]      [0;39m [2m:[0;39m Initializing Spring embedded WebApplicationContext
+[2m2025-11-03 21:15:34.107[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mw.s.c.ServletWebServerApplicationContext[0;39m [2m:[0;39m Root WebApplicationContext: initialization completed in 3446 ms
+[2m2025-11-03 21:15:35.039[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.s.j.s.i.a.WebApplicationImpl          [0;39m [2m:[0;39m Initiating Jersey application, version 'Jersey: 1.19.4 05/24/2017 03:20 PM'
+[2m2025-11-03 21:15:35.164[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using JSON encoding codec LegacyJacksonJson
+[2m2025-11-03 21:15:35.166[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using JSON decoding codec LegacyJacksonJson
+[2m2025-11-03 21:15:35.714[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using XML encoding codec XStreamXml
+[2m2025-11-03 21:15:35.714[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.d.provider.DiscoveryJerseyProvider  [0;39m [2m:[0;39m Using XML decoding codec XStreamXml
+[2m2025-11-03 21:15:38.131[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mDiscoveryClientOptionalArgsConfiguration[0;39m [2m:[0;39m Eureka HTTP Client uses Jersey
+[2m2025-11-03 21:15:38.262[0;39m [33m WARN[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36miguration$LoadBalancerCaffeineWarnLogger[0;39m [2m:[0;39m Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+[2m2025-11-03 21:15:38.298[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.n.eureka.InstanceInfoFactory      [0;39m [2m:[0;39m Setting initial instance status as: STARTING
+[2m2025-11-03 21:15:38.347[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Initializing Eureka in region us-east-1
+[2m2025-11-03 21:15:38.347[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Client configured to neither register nor query for data.
+[2m2025-11-03 21:15:38.362[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Discovery Client initialized at timestamp 1762184738359 with initial instances count: 0
+[2m2025-11-03 21:15:38.428[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.eureka.DefaultEurekaServerContext   [0;39m [2m:[0;39m Initializing ...
+[2m2025-11-03 21:15:38.433[0;39m [33m WARN[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.eureka.cluster.PeerEurekaNodes      [0;39m [2m:[0;39m The replica size seems to be empty. Check the route 53 DNS Registry
+[2m2025-11-03 21:15:38.622[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.e.registry.AbstractInstanceRegistry [0;39m [2m:[0;39m Finished initializing remote region registries. All known remote regions: []
+[2m2025-11-03 21:15:38.624[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.eureka.DefaultEurekaServerContext   [0;39m [2m:[0;39m Initialized
+[2m2025-11-03 21:15:38.650[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.a.e.web.EndpointLinksResolver     [0;39m [2m:[0;39m Exposing 1 endpoint(s) beneath base path '/actuator'
+[2m2025-11-03 21:15:38.703[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.c.n.e.s.EurekaServiceRegistry       [0;39m [2m:[0;39m Registering application SERVICE-REGISTRY with eureka with status UP
+[2m2025-11-03 21:15:38.721[0;39m [33m WARN[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mConfigServletWebServerApplicationContext[0;39m [2m:[0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8761 is already in use
+[2m2025-11-03 21:15:38.722[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[       Thread-9][0;39m [36mo.s.c.n.e.server.EurekaServerBootstrap  [0;39m [2m:[0;39m isAws returned false
+[2m2025-11-03 21:15:38.722[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.eureka.DefaultEurekaServerContext   [0;39m [2m:[0;39m Shutting down ...
+[2m2025-11-03 21:15:38.722[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[       Thread-9][0;39m [36mo.s.c.n.e.server.EurekaServerBootstrap  [0;39m [2m:[0;39m Initialized server context
+[2m2025-11-03 21:15:38.723[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[       Thread-9][0;39m [36mc.n.e.r.PeerAwareInstanceRegistryImpl   [0;39m [2m:[0;39m Got 1 instances from neighboring DS node
+[2m2025-11-03 21:15:38.723[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[       Thread-9][0;39m [36mc.n.e.r.PeerAwareInstanceRegistryImpl   [0;39m [2m:[0;39m Renew threshold is: 1
+[2m2025-11-03 21:15:38.723[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[       Thread-9][0;39m [36mc.n.e.r.PeerAwareInstanceRegistryImpl   [0;39m [2m:[0;39m Changing status to UP
+[2m2025-11-03 21:15:38.731[0;39m [31mERROR[0;39m [35m137198[0;39m [2m---[0;39m [2m[       Thread-9][0;39m [36mo.s.c.n.e.server.EurekaServerBootstrap  [0;39m [2m:[0;39m Cannot bootstrap eureka server :
+
+java.lang.IllegalStateException: Timer already cancelled.
+	at java.base/java.util.Timer.sched(Timer.java:408) ~[na:na]
+	at java.base/java.util.Timer.schedule(Timer.java:259) ~[na:na]
+	at com.netflix.eureka.registry.AbstractInstanceRegistry.postInit(AbstractInstanceRegistry.java:1218) ~[eureka-core-1.10.17.jar:1.10.17]
+	at com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic(PeerAwareInstanceRegistryImpl.java:258) ~[eureka-core-1.10.17.jar:1.10.17]
+	at org.springframework.cloud.netflix.eureka.server.InstanceRegistry.openForTraffic(InstanceRegistry.java:74) ~[spring-cloud-netflix-eureka-server-3.1.7.jar:3.1.7]
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.initEurekaServerContext(EurekaServerBootstrap.java:113) ~[spring-cloud-netflix-eureka-server-3.1.7.jar:3.1.7]
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.contextInitialized(EurekaServerBootstrap.java:71) ~[spring-cloud-netflix-eureka-server-3.1.7.jar:3.1.7]
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration.lambda$start$0(EurekaServerInitializerConfiguration.java:68) ~[spring-cloud-netflix-eureka-server-3.1.7.jar:3.1.7]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+
+[2m2025-11-03 21:15:38.732[0;39m [31mERROR[0;39m [35m137198[0;39m [2m---[0;39m [2m[       Thread-9][0;39m [36me.s.EurekaServerInitializerConfiguration[0;39m [2m:[0;39m Could not initialize Eureka servlet context
+
+java.lang.RuntimeException: Cannot bootstrap eureka server :
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.contextInitialized(EurekaServerBootstrap.java:77) ~[spring-cloud-netflix-eureka-server-3.1.7.jar:3.1.7]
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerInitializerConfiguration.lambda$start$0(EurekaServerInitializerConfiguration.java:68) ~[spring-cloud-netflix-eureka-server-3.1.7.jar:3.1.7]
+	at java.base/java.lang.Thread.run(Thread.java:1575) ~[na:na]
+Caused by: java.lang.IllegalStateException: Timer already cancelled.
+	at java.base/java.util.Timer.sched(Timer.java:408) ~[na:na]
+	at java.base/java.util.Timer.schedule(Timer.java:259) ~[na:na]
+	at com.netflix.eureka.registry.AbstractInstanceRegistry.postInit(AbstractInstanceRegistry.java:1218) ~[eureka-core-1.10.17.jar:1.10.17]
+	at com.netflix.eureka.registry.PeerAwareInstanceRegistryImpl.openForTraffic(PeerAwareInstanceRegistryImpl.java:258) ~[eureka-core-1.10.17.jar:1.10.17]
+	at org.springframework.cloud.netflix.eureka.server.InstanceRegistry.openForTraffic(InstanceRegistry.java:74) ~[spring-cloud-netflix-eureka-server-3.1.7.jar:3.1.7]
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.initEurekaServerContext(EurekaServerBootstrap.java:113) ~[spring-cloud-netflix-eureka-server-3.1.7.jar:3.1.7]
+	at org.springframework.cloud.netflix.eureka.server.EurekaServerBootstrap.contextInitialized(EurekaServerBootstrap.java:71) ~[spring-cloud-netflix-eureka-server-3.1.7.jar:3.1.7]
+	... 2 common frames omitted
+
+[2m2025-11-03 21:15:38.750[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mc.n.eureka.DefaultEurekaServerContext   [0;39m [2m:[0;39m Shut down
+[2m2025-11-03 21:15:38.765[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Shutting down DiscoveryClient ...
+[2m2025-11-03 21:15:38.767[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mcom.netflix.discovery.DiscoveryClient   [0;39m [2m:[0;39m Completed shut down of DiscoveryClient
+[2m2025-11-03 21:15:38.772[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.apache.catalina.core.StandardService  [0;39m [2m:[0;39m Stopping service [Tomcat]
+[2m2025-11-03 21:15:38.819[0;39m [32m INFO[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mConditionEvaluationReportLoggingListener[0;39m [2m:[0;39m 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[2m2025-11-03 21:15:38.902[0;39m [31mERROR[0;39m [35m137198[0;39m [2m---[0;39m [2m[           main][0;39m [36mo.s.b.d.LoggingFailureAnalysisReporter  [0;39m [2m:[0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8761 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8761 or configure this application to listen on another port.
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  23.347 s
+[INFO] Finished at: 2025-11-03T21:15:38+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:2.6.15:run (default-cli) on project service-registry: Application finished with exit code: 1 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
